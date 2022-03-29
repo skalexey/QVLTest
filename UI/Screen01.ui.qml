@@ -75,9 +75,11 @@ Rectangle {
 		}
 	}
 
-	Component.onCompleted: function() {
+	property var update: function() {;
 		orangePropListView.model = orange.allProps;
 		fruitListView.model = fruitListModel;
 	}
+
+	Component.onCompleted: update
 }
 

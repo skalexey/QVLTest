@@ -1,5 +1,6 @@
 import QtQuick
 import QVLTestUI 1.0
+// Import QVL
 import QVL 1.0
 
 Item {
@@ -67,6 +68,20 @@ Item {
 			console.log("Database successfully stored")
 		else
 			console.log("Error! Can’t store the model");
+
+		// Load a database
+		if (dmbModel.load("database.json"))
+			console.log("Database successfully loaded")
+		else
+			console.log("Error! Can’t load the model");
+
+		// Update local variables after reload the model
+		contentModel = dmbModel.contentModel;
+		typesModel = dmbModel.typesModel;
+		fruitList = contentModel.get("fruitList");
+		fruitListModel = fruitList.listModel;
+		orange = fruitList.at(2);
+		screen.update();
 	}
 
 	DMBModel {
@@ -75,10 +90,10 @@ Item {
 
 	Component.onCompleted: function() {
 		test();
-
 	}
 
 	Screen01 {
+		id: screen
 	}
 
 }
