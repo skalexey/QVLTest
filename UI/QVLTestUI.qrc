@@ -1,0 +1,15 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+<file>./fonts/fonts.txt</file>
+<file>./images/place_holder.png</file>
+<file>./imports/QVLTestUI/Constants.qml</file>
+<file>./imports/QVLTestUI/DirectoryFontLoader.qml</file>
+<file>./imports/QVLTestUI/EventListModel.qml</file>
+<file>./imports/QVLTestUI/EventListSimulator.qml</file>
+<file>./imports/QVLTestUI/qmldir</file>
+<file>./qtquickcontrols2.conf</file>
+<file>./QVLTestUI.qml</file>
+<file>./QVLTestUI.qmlproject.qtds</file>
+<file>./Screen01.ui.qml</file>
+</qresource>
+</RCC>

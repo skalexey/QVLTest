@@ -1,0 +1,33 @@
+{
+    "content": {
+        "fruitList": [
+            {
+                "title": "Fruit",
+                "isFruit": true,
+                "color": "green",
+                "size": 2.0
+            },
+            {
+                "proto": "fruit",
+                "title": "Pear",
+                "color": "yellow",
+                "size": 3.0
+            },
+            {
+                "proto": "fruit",
+                "title": "Orange",
+                "color": "orange",
+                "size": "4.1"
+            }
+        ]
+    },
+    "types": {
+        "fruit": {
+            "title": "Fruit",
+            "isFruit": true,
+            "color": "green",
+            "size": 2.0
+        }
+    },
+    "private": {}
+}

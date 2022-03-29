@@ -1,0 +1,7 @@
+dependencies
+Build-cmake
+/imports
+CMakeLists.txt.user
+UI/QVLTestUI.qmlproject.qtds
+tmp
+
