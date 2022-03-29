@@ -18,10 +18,11 @@ Rectangle {
 	Row
 	{
 		ListView {
+			id: fruitListView
 			height: 200
 			width: 100
 
-			model: local.fruitListModel
+			model: null
 			delegate: Row {
 				width: parent.width;
 				height: 20
@@ -47,20 +48,21 @@ Rectangle {
 
 		// Create a ListView of an object
 		ListView {
+			id: orangePropListView
 			height: 200
 			width: 100
-			model: local.orange.allProps
+			model: null
 			delegate: Row {
 				width: parent.width;
 				height: 20
 
 				Text {
 					id: propId
-					text: id
+					text: name
 				}
 
 				Item {
-					id: spacer
+					id: spacer2
 					width: 10
 					height: 10
 				}
@@ -71,6 +73,11 @@ Rectangle {
 				}
 			}
 		}
+	}
+
+	Component.onCompleted: function() {
+		orangePropListView.model = orange.allProps;
+		fruitListView.model = fruitListModel;
 	}
 }
 
